@@ -66,7 +66,7 @@ def crear():
 	#Las consultas parametricas evitan la INYECCION SQL !!!
 
 
-	datos=miNombre.get(),miPassword.get(),miDireccion.get(),miApellido.get(),textoComentario.get("1.0",END)
+	datos=miNombre.get(),miPassword.get(),miApellido.get(),miDireccion.get(),textoComentario.get("1.0",END)
 	#se almacena toda la info de esos campos en la variable datos
 
 	miCursor.execute("INSERT INTO DATOS_USUARIOS VALUES(NULL,?,?,?,?,?)",(datos)) #el primero es null por que es el id que es primary key autoincrementable

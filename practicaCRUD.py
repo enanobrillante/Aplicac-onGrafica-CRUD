@@ -159,8 +159,8 @@ root.title("Gestión Base de datos")
 barraMenu=Menu(root)#menu que cuelga de la raiz
 barraMenu.config(bg="blue")
 root.config(menu=barraMenu,width=450,height=600) #configuracion del menu
-root.config(bg="coral")
-#root.resizable(0,0)
+#root.config(bg="coral")
+root.resizable(0,0)
 
 #ahora se incluyen los elementos de la barra menu
 BBDDmenu=Menu(barraMenu, tearoff=0) #estara dentro de la barra menu y tearoff para quitar lineas en la barra menu#elementos de BBDDmenu
@@ -191,6 +191,7 @@ barraMenu.add_cascade(label="Ayuda", menu=ayudamenu)
 
 miFrame=Frame(root) #el frame estara dentro de la raiz
 miFrame.pack()
+
 
 
 #usamos la funcion StringVar con todos los entry para poder obtener la cadena de caracteres de cada entry.
